@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  test: {
+    environment: 'jsdom'
+  },
   server: {
     host: '0.0.0.0',
     port: 5173,
